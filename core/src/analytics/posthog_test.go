@@ -40,6 +40,7 @@ func (f *fakePosthogClient) Close() error                           { return nil
 func (f *fakePosthogClient) CloseWithContext(context.Context) error { return nil }
 func (f *fakePosthogClient) Flush() error                           { return nil }
 func (f *fakePosthogClient) FlushWithContext(context.Context) error { return nil }
+func (f *fakePosthogClient) Emails() posthog.Emails                 { return nil }
 
 func (f *fakePosthogClient) IsFeatureEnabled(posthog.FeatureFlagPayload) (any, error) {
 	return nil, nil
